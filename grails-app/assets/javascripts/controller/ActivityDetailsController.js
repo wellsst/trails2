@@ -36,7 +36,7 @@
         $log.debug("ActivityDetailsController loading: " + $routeParams.id);
 
         self.selected = null;
-        self.googleMapsUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu9DYSw05UcHakvK8OHXAE6MOSGjcPZ5Q";
+        self.googleMapsUrl = "https://maps.googleapis.com/maps/api/js?key=";
 
         self.map = {
             center: [25, -70],
