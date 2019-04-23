@@ -1,0 +1,21 @@
+import trails.Activity
+
+/*
+http://docs.grails.org/latest/guide/single.html#jsonViews
+http://views.grails.org/latest/#_introduction
+https://causecode.com/blog/46/json-views-getting-started-with-grails-31-and-intellij
+ */
+
+model {
+    Activity activity
+}
+
+json g.render(activity, [deep:true, excludes: ['userProfile']]) {
+
+    activityTypeName activity.activityType.name
+    //activityTypeSpeedStats tmpl.speedStatSet(activity.activityType.speedStatSet)
+    //speedStats activity?.speedStatSet?.speedStats
+    //segments tmpl.segment(activity.segments)
+    //stats tmpl.stats(activity.stats)
+    //speedStatSet tmpl.speedStatSet(activity.speedStatSet)
+}

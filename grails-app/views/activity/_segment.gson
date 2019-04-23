@@ -1,0 +1,10 @@
+import trails.Segment
+
+model {
+    Segment segment
+}
+json g.render(segment, [excludes: ['trainingZones']]) {
+    segment.segmentIndex
+    trackPoints tmpl.trackPoint(segment.trackPoints)
+    //latLngPoints tmpl.latLngPoints(segment.trackPoints)
+}

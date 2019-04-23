@@ -1,0 +1,8 @@
+
+import trails.ActivityType
+
+model {
+    List<ActivityType> activityTypes
+}
+
+json tmpl.activityType(activityTypes ?: [])

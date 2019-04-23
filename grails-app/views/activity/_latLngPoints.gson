@@ -1,0 +1,11 @@
+package activity
+
+import trails.user.TrackPoint
+
+model {
+    TrackPoint trackPoint
+}
+
+json {
+    trackPoint.lat //, trackPoint.lon]
+}

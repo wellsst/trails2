@@ -1,0 +1,8 @@
+import trails.stats.BasicStats
+
+model {
+    BasicStats stats
+}
+json g.render(stats) {
+
+}

@@ -1,0 +1,7 @@
+import trails.user.TrackPoint
+
+model {
+    TrackPoint trackPoint
+}
+
+json g.render(trackPoint)

@@ -1,0 +1,9 @@
+package activity
+
+import trails.stats.SpeedStat
+
+model {
+    SpeedStat speedStat
+}
+
+json g.render(speedStat)

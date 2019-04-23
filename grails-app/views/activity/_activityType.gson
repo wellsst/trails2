@@ -1,0 +1,15 @@
+import trails.ActivityType
+
+/*
+http://docs.grails.org/latest/guide/single.html#jsonViews
+http://views.grails.org/latest/#_introduction
+https://causecode.com/blog/46/json-views-getting-started-with-grails-31-and-intellij
+ */
+
+model {
+    ActivityType activityType
+}
+
+json g.render(activityType, [includes:['name', 'allTimesPerformed']]) {
+    //speedStatSet tmpl.speedStatSet(activityType.speedStatSet)
+}

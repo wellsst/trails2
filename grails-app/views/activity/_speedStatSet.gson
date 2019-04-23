@@ -1,0 +1,11 @@
+package activity
+
+import trails.stats.SpeedStatSet
+
+model {
+    SpeedStatSet speedStatSet
+}
+
+json g.render(speedStatSet, [deep:true]) {
+    speedStats tmpl.speedStat(speedStatSet.speedStats)
+}
